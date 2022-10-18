@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+import streamlit as st
 import seaborn as sns
 from IPython.core.pylabtools import figsize
 
@@ -32,19 +32,19 @@ from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_absolute_percentage_error
 from sklearn.metrics import r2_score
 
-data=pd.read_csv('bird.csv')
+st.write(data=pd.read_csv('bird.csv'))
 
-data
+st.write(data)
 
-dcopy=data.copy()
+st.write(dcopy=data.copy())
 
-dcopy
+st.write(dcopy)
 
-dcopy.shape
+st.write(dcopy.shape)
 
-dcopy.columns
+st.write(dcopy.columns)
 
-dcopy.dtypes
+st.write(dcopy.dtypes)
 
 
 
