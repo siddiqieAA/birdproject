@@ -39,24 +39,3 @@ data
 dcopy=data.copy()
 
 dcopy
-
-dcopy.shape
-
-dcopy.columns
-
-dcopy.dtypes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
