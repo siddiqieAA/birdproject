@@ -6,3 +6,4 @@ seaborn
 IPython
 folium
 plotly
+matplotlib
