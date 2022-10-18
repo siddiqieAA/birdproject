@@ -34,11 +34,11 @@ from sklearn.metrics import r2_score
 
 st.write(data=pd.read_csv('bird.csv'))
 
-st.write(data)
+st.pyplot(data)
 
 st.write(dcopy=data.copy())
 
-st.write(dcopy)
+st.pyplot(dcopy)
 
 st.write(dcopy.shape)
 
