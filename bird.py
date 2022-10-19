@@ -36,6 +36,7 @@ data=pd.read_csv('bird.csv')
 
 data
 
-dcopy=data.copy()
-
-dcopy
+dataset = pd.read_csv('bird.csv')
+matrix = dataset.corr()
+f, ax = plt.subplots(figsize=(9, 6))
+sns.heatmap(matrix, vmax=1, square=True, annot=True)
