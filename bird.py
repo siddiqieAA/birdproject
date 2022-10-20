@@ -36,28 +36,5 @@ data=pd.read_csv('bird.csv')
 dataset = pd.read_csv('bird.csv')
 df = pd.read_csv('bird.csv')
 
-data
-
-data.shape
-
-data.columns
-
-data.dtypes
-
-data_catagorical=data.select_dtypes(include=['object']).columns.tolist()
-data_catagorical
-
-data.describe()
-
-data.info()
-
-#Check for Null or missing values in the datset
-data.isnull().sum()
-
-dataset.duplicated().any()
-
-#remove column 'id' as it is no relevant for data analysis
-datanew = data.drop(['id'], axis = 1)
-datanew.info()
 
 sns.countplot(data=datanew, x = 'bird_type');
