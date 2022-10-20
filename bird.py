@@ -32,9 +32,9 @@ from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_absolute_percentage_error
 from sklearn.metrics import r2_score
 
-data=pd.read_csv('/content/bird.csv')
-dataset = pd.read_csv('/content/bird.csv')
-df = pd.read_csv('/content/bird.csv')
+data=pd.read_csv('bird.csv')
+dataset = pd.read_csv('bird.csv')
+df = pd.read_csv('bird.csv')
 
 data
 
