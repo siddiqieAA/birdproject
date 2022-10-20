@@ -61,30 +61,3 @@ datanew = data.drop(['id'], axis = 1)
 datanew.info()
 
 sns.countplot(data=datanew, x = 'bird_type');
-
-datanew.groupby('bird_type').size().plot(kind = 'pie', autopct = '%.0f%%', label = '');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'humerus_length');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'humerus_width');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'ulna_length');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'ulna_width');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'femur_length');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'femur_width');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'tibiotarsus_length');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'tibiotarsus_width');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'tarsus_length');
-
-sns.boxplot(data = datanew, x = 'bird_type', y = 'tarsus_width');
-
-#Taking numerical columns
-matrix = dataset.corr()
-f, ax = plt.subplots(figsize=(9, 6))
-sns.heatmap(matrix, vmax=1, square=True, annot=True)
